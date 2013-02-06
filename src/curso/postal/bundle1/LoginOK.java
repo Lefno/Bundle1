@@ -24,17 +24,20 @@ public class LoginOK extends Activity {
 		Bundle datosLogin = getIntent().getExtras();
 		
 		for(int i = 0;i >= users.length;i++)
+		{
 			if (users[i].equals(datosLogin.get(getResources().getString(R.string.user))))
 			{
 					if(pass[i].equalsIgnoreCase(datosLogin.getString(getResources().getString(R.string.password))))
 						{
 							txt_login.setText(R.string.correcto);
-						}	
+						}
+					
 			}
 			else
 			{
 				txt_login.setText(R.string.incorrecto);
 			}
+		}
 	}
 
 	@Override
