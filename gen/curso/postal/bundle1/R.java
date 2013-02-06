@@ -8,38 +8,56 @@
 package curso.postal.bundle1;
 
 public final class R {
+    public static final class array {
+        public static final int array_login_pass=0x7f050001;
+        /**  Array para el login 
+         */
+        public static final int array_login_user=0x7f050000;
+    }
     public static final class attr {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int btn_enviar=0x7f070005;
-        public static final int edit_pass=0x7f070004;
-        public static final int edit_user=0x7f070002;
-        public static final int layout_login=0x7f070000;
-        public static final int menu_settings=0x7f070006;
-        public static final int txt_pass=0x7f070003;
-        public static final int txt_user=0x7f070001;
+        public static final int btn_enviar=0x7f080006;
+        public static final int edit_pass=0x7f080005;
+        public static final int edit_user=0x7f080003;
+        public static final int layout_login=0x7f080001;
+        public static final int menu_settings=0x7f080007;
+        public static final int txt_login=0x7f080000;
+        public static final int txt_pass=0x7f080004;
+        public static final int txt_user=0x7f080002;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_login_ok=0x7f030000;
+        public static final int activity_main=0x7f030001;
     }
     public static final class menu {
-        public static final int activity_main=0x7f060000;
+        public static final int activity_login_ok=0x7f070000;
+        public static final int activity_main=0x7f070001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        /**   Strings errores 
+        /**  Strings Logueo OK/NO 
+         */
+        public static final int correcto=0x7f04000a;
+        /**  Strings errores 
          */
         public static final int error_datos=0x7f040005;
         public static final int hello_world=0x7f040001;
+        public static final int incorrecto=0x7f04000b;
         /**  Strings botones 
          */
         public static final int loguear=0x7f040006;
         public static final int menu_settings=0x7f040002;
         public static final int pass=0x7f040004;
-        /**   String de los EditText 
+        public static final int password=0x7f040009;
+        public static final int title_activity_login_ok=0x7f040007;
+        /**  Variable del login 
+         */
+        public static final int user=0x7f040008;
+        /**  String de los EditText 
          */
         public static final int usuario=0x7f040003;
     }
@@ -65,10 +83,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f060001;
     }
 }

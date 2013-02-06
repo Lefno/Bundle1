@@ -2,11 +2,13 @@ package curso.postal.bundle1;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -28,7 +30,24 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
+				if(edt_pass.getText().toString().equals("") || edt_user.getText().toString().equals(""))
+				{
+					Toast.makeText(MainActivity.this, R.string.error_datos, Toast.LENGTH_LONG).show();
+				}
+				else
+				{
+					Intent envioDatos = new Intent();
+					Bundle datosLogin = new Bundle();
+					
+					datosLogin.putString(getResources().getString(R.string.user), edt_user.getText().toString());
+					datosLogin.putString(getResources().getString(R.string.password), edt_pass.getText().toString());
+					
+					envioDatos.setClass(MainActivity.this, LoginOK.class);
+					envioDatos.putExtras(datosLogin);
+					
+					startActivity(envioDatos);
+					
+				}
 				
 			}
 		});

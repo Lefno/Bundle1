@@ -4,19 +4,46 @@
     <string name="app_name">Bundle1</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    
-    
-    <!--  String de los EditText -->
 
-	<string name="usuario">Introduce  el nombre de usuario: </string>
-	<string name="pass">Introduce   la contraseña: </string>
-	
-	<!--  Strings errores -->
-	
-	<string name="error_datos">ERROR: Falta por añadir el nombre del usuario o contraseña</string>
-	
-	<!-- Strings botones -->
-	
-	<string name="loguear">Entrar</string>
+    <!-- String de los EditText -->
+
+    <string name="usuario">Introduce  el nombre de usuario: </string>
+    <string name="pass">Introduce   la contraseña: </string>
+
+    <!-- Strings errores -->
+
+    <string name="error_datos">ERROR: Falta por añadir el nombre del usuario o contraseña</string>
+
+    <!-- Strings botones -->
+
+    <string name="loguear">Entrar</string>
+    <string name="title_activity_login_ok">LoginOK</string>
+    
+    <!-- Variable del login -->
+    
+    <string name="user">usuario</string>
+    <string name="password">pass</string>
+    
+    <!-- Array para el login -->
+    
+    <string-array 
+        name="array_login_user">
+        <item>Juan</item>
+        <item>Jose</item>
+        <item>Maria</item>
+    </string-array>
+    
+    <string-array
+        name="array_login_pass">
+        <item>1234</item>
+        <item>4321</item>
+        <item>1111</item>
+    </string-array>
+    
+    
+    <!-- Strings Logueo OK/NO -->
+    
+    <string name="correcto">Los datos introducidos son correctos</string>
+    <string name="incorrecto">Los datos introducidos son incorrectos</string>
 
 </resources>
