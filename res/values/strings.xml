@@ -4,5 +4,11 @@
     <string name="app_name">Bundle1</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    
+    
+    <!--  String de los EditText -->
+
+	<string name="usuario">Introduce el nombre de usuario</string>
+	<string name="pass">Introduce la contraseña</string>
 
 </resources>
