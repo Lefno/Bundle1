@@ -8,7 +8,15 @@
     
     <!--  String de los EditText -->
 
-	<string name="usuario">Introduce el nombre de usuario</string>
-	<string name="pass">Introduce la contraseña</string>
+	<string name="usuario">Introduce  el nombre de usuario: </string>
+	<string name="pass">Introduce   la contraseña: </string>
+	
+	<!--  Strings errores -->
+	
+	<string name="error_datos">ERROR: Falta por añadir el nombre del usuario o contraseña</string>
+	
+	<!-- Strings botones -->
+	
+	<string name="loguear">Entrar</string>
 
 </resources>

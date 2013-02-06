@@ -4,11 +4,56 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    
+    <LinearLayout 
+        android:id="@+id/layout_login"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+       	android:layout_marginTop="60dp"
+        android:orientation="vertical">
+        
+		       
+					     <TextView
+						     android:id="@+id/txt_user"
+						     android:layout_width="wrap_content"
+						     android:layout_height="wrap_content"
+						     android:text="@string/usuario" 
+						     android:textSize="18sp"/>
+						    
+						<EditText
+						     android:id="@+id/edit_user"
+						     android:layout_height="wrap_content"
+						     android:layout_width="wrap_content"
+						     android:ems="14"
+						     android:inputType="text"/>
+		
+		     
+					    <TextView 
+					        android:id="@+id/txt_pass"
+					        android:layout_height="wrap_content"
+					        android:layout_width="wrap_content"
+					        android:text="@string/pass" 
+					        android:textSize="18sp"/>
+					    
+					    <EditText 
+					        android:id="@+id/edit_pass"
+					        android:layout_height="wrap_content"
+					        android:layout_width="wrap_content"
+					        android:ems="10"
+					        android:inputType="textPassword"/>
+			
+    
+    </LinearLayout>"
+    
+    <Button 
+        android:id="@+id/btn_enviar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/layout_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/loguear"/>
+    
 
 </RelativeLayout>
